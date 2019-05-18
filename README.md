@@ -24,7 +24,7 @@ python3 app.py
 
 ```
 pip install dash_auth
-````
+```
 
 ````
 import dash_auth
