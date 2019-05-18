@@ -1,0 +1,5 @@
+# Plotly Dash dependencies
+dash
+dash-daq
+
+
