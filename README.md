@@ -20,26 +20,6 @@ python3 app.py
 
 ## Deployment
 
-### Add Authentification
-
-```
-pip install dash_auth
-```
-
-````
-import dash_auth
-
-VALID_USERNAME_PASSWORD_PAIRS = [
-    ['hello', 'world']
-]
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-auth = dash_auth.BasicAuth(
-    app,
-    VALID_USERNAME_PASSWORD_PAIRS
-)
-```
-
 ### Deploy on heroku
 
 ```

@@ -1,9 +1,8 @@
-# Plotly Dash dependencies
 dash
 dash-daq
-pandas # optional
+dash_auth
+pandas
+gunicorn
 
-# Required to run dashboard on heroku
-gunicorn 
 
 
