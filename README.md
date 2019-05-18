@@ -5,7 +5,9 @@
 ### GIT version control
 
 Linux: https://www.atlassian.com/git/tutorials/install-git#linux
+
 Windows: https://www.atlassian.com/git/tutorials/install-git#windows
+
 OSX: https://www.atlassian.com/git/tutorials/install-git#mac-os-x
 
 
