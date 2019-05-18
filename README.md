@@ -32,6 +32,7 @@ python3 app.py
 ## What is Plotly Dash
 
 https://plot.ly/python/
+
 https://dash.plot.ly/gallery
 
 ## Deployment
