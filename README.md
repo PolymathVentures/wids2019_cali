@@ -20,11 +20,15 @@ python3 app.py
 
 ## Deployment
 
+
 ### Deploy on heroku
 
+Sign up on heroku.com
+
 ```
+git add .
+git commit -m 'first dashbard'
 curl https://cli-assets.heroku.com/install.sh | sh
-pip freeze > requirements.txt
 heroku create wids2019_cali
 git push heroku master
 ```
