@@ -29,6 +29,10 @@ pip3 install -r requirements.txt
 python3 app.py
 ```
 
+## What is Plotly Dash
+
+https://dash.plot.ly/gallery
+
 ## Deployment
 
 
