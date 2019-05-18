@@ -8,7 +8,14 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
-df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv")
+df_earning = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv")
+
+
+df_complaints = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/26k-consumer-complaints.csv')
+df_complaints['datetime'] = pd.to_datetime(df_complaints['Date received'])
+df_complaints.index = df_complaints['datetime']
+df_complaints.resample('d')
+
 
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
@@ -32,7 +39,7 @@ app.layout = html.Div(children=[
         id="school-earnings",
         figure={
             'data': [
-                {'x': df.School, 'y': df.Gap, 'type': 'bar'}
+                {'x': df_earning.School, 'y': df_earning.Gap, 'type': 'bar'}
             ]
         }
     ),
